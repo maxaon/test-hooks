@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="wix.common">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>wixBiLogger</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+  <body>
+    <div class="container" ng-controller="MyCtrl as myCtrl">
+        <div id="test-bi-1" wix-bi="EVENT_NAME" style="cursor: pointer">Click me to send a BI event without params</div>
+        <div id="test-bi-2" wix-bi="EVENT_NAME" wix-bi-args="{a: 1, b: 2}" style="cursor: pointer">Click me to send a BI event with params</div>
+        <div id="test-bi-3" ng-click="myCtrl.sendBi()" style="cursor: pointer">Click me to send 3 BI events with a controller</div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- #if( !${debug} ) -->
+<script src="scripts/bi-logger/wix-bi.js"></script>
+<!-- #else -#if( false )#end->
+<script src="_debug_scripts/globals/wix-bi.js"></script>
+<script src="_debug_scripts/globals/wix-bi-event-handler.js"></script>
+<script src="_debug_scripts/globals/wix-bi-parsers.js"></script><!-- #end -->
+    <!-- #if( !${debug} ) -->
+<script src="scripts/bi-logger/wix-bi-angular.js"></script>
+<!-- #else -#if( false )#end->
+<script src="_debug_scripts/app.js"></script>
+<script src="_debug_scripts/globals/wix-bi.js"></script>
+<script src="_debug_scripts/globals/wix-bi-event-handler.js"></script>
+<script src="_debug_scripts/globals/wix-bi-parsers.js"></script>
+<script src="_debug_scripts/directives/wix-bi.js"></script>
+<script src="_debug_scripts/services/bi-logger.js"></script>
+<script src="_debug_scripts/services/dom-bi-logger.js"></script>
+<script src="_debug_scripts/constants/recursive-extend.js"></script>
+<script src="_debug_scripts/services/wix-bi-logger.js"></script><!-- #end -->
+    <!-- #if( !${debug} ) -->
+<script src="scripts/scripts.js"></script>
+<!-- #else -#if( false )#end->
+<script src="_debug_scripts/demo.js"></script><!-- #end -->
+  </body>
+</html>

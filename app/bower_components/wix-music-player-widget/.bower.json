@@ -1,0 +1,33 @@
+{
+  "name": "wix-music-player-widget-sdk",
+  "version": "0.1.2",
+  "homepage": "https://github.com/wix/wix-music-player-widget-sdk",
+  "authors": [
+    "Ilya Panasenko <ilyap@wix.com>"
+  ],
+  "main": "dist/wix-player.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "*.conf.js",
+    "node_modules",
+    "bower_components",
+    "test",
+    "src",
+    "app",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.2",
+    "commit": "c0f4de3a5894711fcb83a84cca98a87dbe79f4d3"
+  },
+  "_source": "git@github.com:wix/wix-music-player-widget-sdk.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:wix/wix-music-player-widget-sdk.git"
+}
